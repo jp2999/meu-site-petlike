@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cachorros - PetLike!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #fefefe;
+            color: #1d1d1f;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        h1 {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 250px;
+            height: 380px;
+            border-radius: 15px;
+            border: 2px solid rgb(235, 235, 235);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #e8e8e8;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            object-fit: cover;
+        }
+
+        .card div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            padding: 15px;
+        }
+
+        .card h1 {
+            font-size: 1em;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 6px;
+        }
+
+        .card h2 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #1d1d1f;
+            margin: 2px 0;
+        }
+
+        .card button {
+            background-color: #e5d2b2;
+            border: none;
+            width: 70%;
+            height: 40px;
+            color: #fff;
+            font-size: 0.8em;
+            font-weight: 600;
+            border-radius: 7px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #e1ceae;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nossos Cachorros</h1>
+    <div class="cards">
+
+        <div class="card">
+            <img src="golden-retriever-2.png">
+            <div>
+                <div>
+                    <h1>Golden Retriever</h1>
+                    <h2>Amigável, brincalhão e ótimo para famílias.</h2>
+                    <h2>R$ 7.999,00</h2>
+                </div>
+                <button onclick="mostrarInfo('Golden Retriever')">Tenho interesse!</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="french-bulldog-playing.png">
+            <div>
+                <div>
+                    <h1>Bulldog Francês</h1>
+                    <h2>Carinhoso, tranquilo e ideal para apartamentos.</h2>
+                    <h2>R$ 8.499,00</h2>
+                </div>
+                <button onclick="mostrarInfo('Bulldog Francês')">Tenho interesse!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarInfo(nomePet) {
+            alert(
+                `Estamos felizes que você se interessou pelo ${nomePet}!\nEnvie um email ou mande uma mensagem para garantir o seu pet:\n\nEmail: seupetlike@gmail.com.br\nWhatsApp: +55 11 98776-63453`
+            );
+        }
+    </script>
+</body>
+
+</html>

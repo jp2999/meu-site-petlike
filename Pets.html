@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Card Fofo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #fefefe;
+      color: #1d1d1f;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 250px;
+      height: 380px;
+      border-radius: 15px;
+      border: 2px solid rgb(235, 235, 235);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #e8e8e8;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+    }
+
+    .card div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      padding: 15px;
+    }
+
+    .card h1 {
+      font-size: 1em;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 6px;
+    }
+
+    .card h2 {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: #1d1d1f;
+      margin: 2px 0;
+    }
+
+    .card button {
+      background-color: #e5d2b2;
+      border: none;
+      width: 70%;
+      height: 40px;
+      color: #fff;
+      font-size: 0.8em;
+      font-weight: 600;
+      border-radius: 7px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #e1ceae;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Confira os nossos pets</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="akita_0.jpg.avif">
+      <div>
+        <div>
+          <h1>Cachorros</h1>
+          <h2>Amor em forma de focinho!</h2>
+          <h2>Em média R$ 8.249,00</h2>
+        </div>
+        <button onclick="window.location.href='cachorrospl.html'">Saiba mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="vida-de-gato.jpg">
+      <div>
+        <div>
+          <h1>Gatos</h1>
+          <h2>Carinho que decora!</h2>
+          <h2>Em média R$ 5.599,00</h2>
+        </div>
+        <button onclick="window.location.href='gatospl.html'">Saiba mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="especies-peixes-preferidas-aquario_4-1024x683.png">
+      <div>
+        <div>
+          <h1>Peixes</h1>
+          <h2>Colorem seu dia!</h2>
+          <h2>Em média R$ 549,00</h2>
+        </div>
+        <button onclick="window.location.href='peixespl.html'">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
